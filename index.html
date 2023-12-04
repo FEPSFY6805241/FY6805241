@@ -97,6 +97,47 @@
 </html>
 
 
+
+<h2> conference presentation: bridge deck repairs</h2>
+<script>
+  // array of slide image URLs
+  var slideImages = ["silde1.jpg", "slide2.jpg", "slide3.jpg", "slide4.jpg"];
+  var currentslide = 0;
+
+  function showSlide(){
+    document.getElementById('slide').src = slideImages[currentslide];
+  }
+  function nextslide(){
+    currentSlide = (currentslide - 1 + slideImages.length) % slideImages.length;
+    showslide();
+  }
+
+  showslide();
+  </script>
+ <div id=" slide-container">
+  <img id="slide" src="slide1.jpg" alt="slide 1" style="width:100%; max-width:800px;">
+ </div>
+
+
+
+ <div class = "button-container">
+  <button class="button" onclick = "prevslide()">previous</button>
+  <button class="button" onclick="nextslide()">next</button>
+</div>
+
+
+
+
+<div class="slide-number-container">
+
+  <button class= "button" onclick="showslidenumber(1)">1</button> 
+  <button class="button" onclick="showslidenumber(2)">2</button>
+  <button class="button" onclick= "showslidenumber(3)">3</button>
+  <button class="button" onclick="showslidenumber(4)">4</button>
+</div>
+
+
+
   
 </body>
 </html>
