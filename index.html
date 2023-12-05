@@ -35,7 +35,7 @@
   </style>
 </head>
 <body>
-  <img src="WebBannner2023.png" alt="Banner">
+  <img src="WebBanner2023.png" alt="Banner">
 
   <h1><b>ENG0018 Computer Laboratory 2023/24</b></h1>
   <h2>Student URN: 6805241</h2>
@@ -102,32 +102,36 @@
 <script>
   // array of slide image URLs
   var slideImages = ["Silde1.jpeg", "Slide2.jpeg", "Slide3.jpeg", "Slide4.jpeg","Slide5.jpeg"];
-  var currentslide = 0;
+  var currentSlide = 0;
 
   function showSlide(){
-    document.getElementById('slide').src = slideImages[currentslide];
+    document.getElementById('slide').src = slideImages[currentSlide];
   }
   function nextSlide(){
     currentSlide = (currentslide + 1) % slideImages.length;
     showslide();
   }
   function prevSlide(){
-    currentSlide = (currentslide - 1 + slideImages.length) % slideImages.length;
-    showslide();  
+    currentSlide = (currentSlide - 1 + slideImages.length) % slideImages.length;
+    showSlide();  
   }
 
   function showSlidenumber(slideNumber) {
-    currentSlide= slidenumber - 1;
+    currentSlide= slideNumber - 1;
     showSlide();
   }
+  
+  
+  
   showSlide();
 
 
 
 </script>
+
  <div id=" slide-container">
-  <img id="slide" src="Slide1.jpeg" alt="slide 1" style="width:100%; max-width:800px;">
- </div>
+  <img id="slide" src="Slide1.jpeg" alt="Slide 1" style="width:100%; max-width:800px;">
+ 
 
 
 
@@ -141,10 +145,11 @@
 
 <div class="slide-number-container">
 
-  <button class= "button" onclick="showslidenumber(1)">1</button> 
-  <button class="button" onclick="showslidenumber(2)">2</button>
-  <button class="button" onclick= "showslidenumber(3)">3</button>
-  <button class="button" onclick="showslidenumber(4)">4</button>
+  <button class= "button" onclick="showSlideNumber(1)">1</button> 
+  <button class="button" onclick="showSlideNumber(2)">2</button>
+  <button class="button" onclick= "showSlideNumber(3)">3</button>
+  <button class="button" onclick="showSlideNumber(4)">4</button>
+  <button class= "button" onclick="showSlideNumber(5)">5</button>
 </div>
 
 
