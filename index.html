@@ -124,7 +124,74 @@
   
   
   showSlide();
+<div id=" slide-container">
+  <img id="slide" src="Slide1.jpeg" alt="Slide 1" style="width:100%; max-width:800px;">
+ 
 
+
+
+ <div class = "button-container">
+  <button class="button" onclick = "prevslide()">previous</button>
+  <button class="button" onclick="nextslide()">next</button>
+</div>
+
+
+
+
+<div class="slide-number-container">
+
+  <button class= "button" onclick="showSlideNumber(1)">1</button> 
+  <button class="button" onclick="showSlideNumber(2)">2</button>
+  <button class="button" onclick= "showSlideNumber(3)">3</button>
+  <button class="button" onclick="showSlideNumber(4)">4</button>
+  <button class= "button" onclick="showSlideNumber(5)">5</button>
+</div>
+
+
+
+  
+</body>
+</html>
+
+
+<style>
+#slide-container {
+  text-align: center;
+  position: relative;
+    
+}
+
+
+
+.button-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  margin-bottom: -100px;
+}
+
+
+.button {
+  padding: 10px 20px;
+  background-color: #4caf50
+  color: white;
+  border: none;
+  border-radius: 5px;
+  font-size: 16px;
+  cursor: pointer;
+  margin: 0 5px;
+}
+
+.slide-number-container {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: tanslateX(-50%);
+  margin-bottom: -50px;
+}
+
+</style>
 
 
 </script>
